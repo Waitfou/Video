@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="366dp"
+        android:id="@+id/new_video"
+        android:layout_weight="0.78" />
+
+        <TextView
+            android:text="视频名称:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txv_videoName"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="#FF00FF"/>
+        <TextView
+            android:text="文件路径:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txv_videoUri"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#FF00FF"/>
+</LinearLayout>

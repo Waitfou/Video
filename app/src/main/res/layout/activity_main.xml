@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="whlandroid.sf03_musicClass.MainActivity"
+    android:orientation="vertical">
+
+
+<!--    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="视频播放"
+    android:textColor="#FF0000"
+    android:textStyle="bold"
+    android:textSize="30sp"
+    android:gravity="center"
+    android:id="@+id/txv_title"/>-->
+
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp">
+
+
+        <Button
+        android:text="选取视频"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_getVideo"
+        android:layout_weight="1"
+        android:background="#0077FF"
+        android:textSize="25sp"
+        android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:text="放大播放"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_show"
+            android:layout_weight="1"
+            android:background="#0077FF"
+            android:textSize="25sp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+    android:text="视频名称"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txv_videoName"
+    android:layout_marginTop="20dp"
+    android:textSize="20sp"
+    android:textColor="#FF00FF"/>
+
+
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    >
+
+    <ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_looping"
+    android:id="@+id/imgB_looping"
+    android:layout_weight="1"/>
+
+    <ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:src="@drawable/ic_media_stop"
+    android:id="@+id/imgB_stop"
+    android:layout_marginLeft="5dp"/>
+
+    <ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_media_backward"
+    android:id="@+id/imgB_backward"
+    android:layout_weight="1"
+    android:layout_marginLeft="5dp"/>
+
+    <ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_media_play"
+    android:id="@+id/imgB_play"
+    android:layout_weight="1"
+    android:layout_marginLeft="5dp"/>
+
+    <ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_media_foreward"
+    android:id="@+id/imgB_forward"
+    android:layout_weight="1"
+    android:layout_marginLeft="5dp"/>
+
+    <ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_dialog_info"
+    android:id="@+id/imgB_info"
+    android:layout_weight="1"
+    android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+    android:text="文件路径"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txv_videoUri"
+    android:textSize="20sp"
+    android:layout_marginTop="20dp"
+    android:textColor="#FF00FF"/>
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv_videoview"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#FF00FF"/>
+
+</LinearLayout>
